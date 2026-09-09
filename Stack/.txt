@@ -1,0 +1,8 @@
+* Stack is a data structures which store any types of data.
+* Its follow the LIFO mechanism .
+* Ekhi end se push hota h or ek hi end se pop hota h ... 
+
+* push(x) -> insert 
+* pop() -> top se delete krn 
+* top() -> Top element ko represent krn 
+* size() -> stack ki size ko pta krn 
