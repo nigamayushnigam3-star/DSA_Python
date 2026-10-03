@@ -39,3 +39,15 @@ Each script creates a linked list, performs a few operations, and prints the res
 ## Contributing
 
 Feel free to add more data structures, improve the existing implementations, or include tests and usage examples.
+
+<!---LeetCode Topics Start-->
+# LeetCode Topics
+## Linked List
+|  |
+| ------- |
+| [0019-remove-nth-node-from-end-of-list](https://github.com/nigamayushnigam3-star/DSA_Python/tree/master/0019-remove-nth-node-from-end-of-list) |
+## Two Pointers
+|  |
+| ------- |
+| [0019-remove-nth-node-from-end-of-list](https://github.com/nigamayushnigam3-star/DSA_Python/tree/master/0019-remove-nth-node-from-end-of-list) |
+<!---LeetCode Topics End-->
