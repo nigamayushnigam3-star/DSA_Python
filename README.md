@@ -47,6 +47,7 @@ Feel free to add more data structures, improve the existing implementations, or 
 | ------- |
 | [0019-remove-nth-node-from-end-of-list](https://github.com/nigamayushnigam3-star/DSA_Python/tree/master/0019-remove-nth-node-from-end-of-list) |
 | [0021-merge-two-sorted-lists](https://github.com/nigamayushnigam3-star/DSA_Python/tree/master/0021-merge-two-sorted-lists) |
+| [0083-remove-duplicates-from-sorted-list](https://github.com/nigamayushnigam3-star/DSA_Python/tree/master/0083-remove-duplicates-from-sorted-list) |
 ## Two Pointers
 |  |
 | ------- |
