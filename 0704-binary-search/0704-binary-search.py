@@ -11,7 +11,21 @@ class Solution:
                 low = mid+1
             else:
                 high = mid-1 
-        return -1 
+        return -1
+
+
+
+        #  Recursive sollution 
+        # def search(self, nums: list[int], low:int,high:int) -> int: 
+        # if low > high:
+        #     return -1 
+        # mid = (low+high)//2
+        # if nums[mid]==target:
+        #     return mid 
+        # elif nums[mid]< target:
+        #     return search(nums,target,mid+1,high) 
+        # else:
+        #     return search(nums,target,low,mid-1)
                
 
 
