@@ -162,3 +162,15 @@ GitHub: [@nigamayushnigam3-star](https://github.com/nigamayushnigam3-star)
 ---
 
 ⭐ If you find this repository useful, consider giving it a star!
+
+<!---LeetCode Topics Start-->
+# LeetCode Topics
+## Array
+|  |
+| ------- |
+| [0001-two-sum](https://github.com/nigamayushnigam3-star/DSA_Python/tree/master/0001-two-sum) |
+## Hash Table
+|  |
+| ------- |
+| [0001-two-sum](https://github.com/nigamayushnigam3-star/DSA_Python/tree/master/0001-two-sum) |
+<!---LeetCode Topics End-->
