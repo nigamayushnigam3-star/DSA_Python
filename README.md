@@ -1,80 +1,164 @@
-# DSA Python
+# DSA Python 🐍
 
-A small collection of data-structure implementations written in Python. The current examples focus on linked lists and demonstrate common insertion, deletion, and traversal operations.
+A collection of **Data Structures and Algorithms problems implemented in Python**.
 
-## Contents
+This repository contains my DSA practice for **coding interviews and problem-solving**, including LeetCode problems and fundamental data-structure implementations.
 
-| Path | Description |
-| --- | --- |
-| `LinkList/SLL.py` | Singly linked list implementation and example operations. |
-| `DDL/ddl.py` | Doubly linked list implementation and example operations. |
-| `LinkList/.txt` | Notes on linked-list concepts. |
+---
 
-## Requirements
+## 📚 Topics Covered
 
-- Python 3.x
+* Arrays
+* Linked Lists
+* Two Pointers
+* Recursion
+* Divide and Conquer
+* Dynamic Programming
+* Binary Search
 
-No third-party packages are required.
+---
 
-## Run the examples
+## 🧩 Data Structures
 
-From the project root, run either script:
+| Data Structure     | Description                         |
+| ------------------ | ----------------------------------- |
+| Singly Linked List | Insertion, deletion and traversal   |
+| Doubly Linked List | Basic implementation and operations |
+| Stack              | Stack implementation and operations |
+
+---
+
+## 💻 LeetCode Problems
+
+### 🔗 Linked List
+
+| Problem                                                                                                                                            | Solution |
+| -------------------------------------------------------------------------------------------------------------------------------------------------- | -------- |
+| [0019 - Remove Nth Node From End of List](https://github.com/nigamayushnigam3-star/DSA_Python/tree/main/0019-remove-nth-node-from-end-of-list)     | Python   |
+| [0021 - Merge Two Sorted Lists](https://github.com/nigamayushnigam3-star/DSA_Python/tree/main/0021-merge-two-sorted-lists)                         | Python   |
+| [0083 - Remove Duplicates from Sorted List](https://github.com/nigamayushnigam3-star/DSA_Python/tree/main/0083-remove-duplicates-from-sorted-list) | Python   |
+| [0203 - Remove Linked List Elements](https://github.com/nigamayushnigam3-star/DSA_Python/tree/main/0203-remove-linked-list-elements)               | Python   |
+
+### 📦 Array
+
+| Problem                                                                                                                                      | Solution |
+| -------------------------------------------------------------------------------------------------------------------------------------------- | -------- |
+| [0053 - Maximum Subarray](https://github.com/nigamayushnigam3-star/DSA_Python/tree/main/0053-maximum-subarray)                               | Python   |
+| [0121 - Best Time to Buy and Sell Stock](https://github.com/nigamayushnigam3-star/DSA_Python/tree/main/0121-best-time-to-buy-and-sell-stock) | Python   |
+| [0704 - Binary Search](https://github.com/nigamayushnigam3-star/DSA_Python/tree/main/0704-binary-search)                                     | Python   |
+
+### 👆 Two Pointers
+
+| Problem                                                                                                                                        | Solution |
+| ---------------------------------------------------------------------------------------------------------------------------------------------- | -------- |
+| [0019 - Remove Nth Node From End of List](https://github.com/nigamayushnigam3-star/DSA_Python/tree/main/0019-remove-nth-node-from-end-of-list) | Python   |
+
+### 🔄 Recursion
+
+| Problem                                                                                                                              | Solution |
+| ------------------------------------------------------------------------------------------------------------------------------------ | -------- |
+| [0021 - Merge Two Sorted Lists](https://github.com/nigamayushnigam3-star/DSA_Python/tree/main/0021-merge-two-sorted-lists)           | Python   |
+| [0203 - Remove Linked List Elements](https://github.com/nigamayushnigam3-star/DSA_Python/tree/main/0203-remove-linked-list-elements) | Python   |
+
+### 🧠 Divide and Conquer
+
+| Problem                                                                                                        | Solution |
+| -------------------------------------------------------------------------------------------------------------- | -------- |
+| [0053 - Maximum Subarray](https://github.com/nigamayushnigam3-star/DSA_Python/tree/main/0053-maximum-subarray) | Python   |
+
+### 📈 Dynamic Programming
+
+| Problem                                                                                                                                      | Solution |
+| -------------------------------------------------------------------------------------------------------------------------------------------- | -------- |
+| [0053 - Maximum Subarray](https://github.com/nigamayushnigam3-star/DSA_Python/tree/main/0053-maximum-subarray)                               | Python   |
+| [0121 - Best Time to Buy and Sell Stock](https://github.com/nigamayushnigam3-star/DSA_Python/tree/main/0121-best-time-to-buy-and-sell-stock) | Python   |
+
+### 🔎 Binary Search
+
+| Problem                                                                                                  | Solution | Time         | Space    |
+| -------------------------------------------------------------------------------------------------------- | -------- | ------------ | -------- |
+| [0704 - Binary Search](https://github.com/nigamayushnigam3-star/DSA_Python/tree/main/0704-binary-search) | Python   | **O(log n)** | **O(1)** |
+
+---
+
+## 🔍 Binary Search
+
+Binary Search is an efficient searching algorithm used on a **sorted array**.
+
+### Basic Approach
+
+1. Set `low = 0`
+2. Set `high = n - 1`
+3. Find the middle element:
+
+   ```python
+   mid = (low + high) // 2
+   ```
+4. Compare `nums[mid]` with the target.
+5. If the middle element is greater than the target, search the left half.
+6. Otherwise, search the right half.
+7. Continue until the target is found or the search space becomes empty.
+
+### Python Implementation
+
+```python
+def binarySearch(nums, target):
+    n = len(nums)
+
+    low = 0
+    high = n - 1
+
+    while low <= high:
+        mid = (low + high) // 2
+
+        if nums[mid] == target:
+            return mid
+
+        elif nums[mid] > target:
+            high = mid - 1
+
+        else:
+            low = mid + 1
+
+    return -1
+```
+
+### Complexity
+
+* **Best Case:** `O(1)`
+* **Average Case:** `O(log n)`
+* **Worst Case:** `O(log n)`
+* **Space Complexity:** `O(1)` for iterative implementation
+
+---
+
+## ▶️ Running Python Examples
+
+From the project root:
 
 ```bash
 python LinkList/SLL.py
 python DDL/ddl.py
 ```
 
-Each script creates a linked list, performs a few operations, and prints the resulting values.
+No third-party Python packages are required.
 
-## Concepts covered
+---
 
-- Singly linked lists
-- Doubly linked lists
-- Insertion at the beginning and end
-- Insertion after a given value
-- Deletion
-- Traversal and printing
+## 🎯 Goal
 
-## Contributing
+The goal of this repository is to continuously practice DSA problems, improve problem-solving skills, and prepare for **technical interviews and placements**.
 
-Feel free to add more data structures, improve the existing implementations, or include tests and usage examples.
+More problems and topics will be added regularly.
 
-<!---LeetCode Topics Start-->
-# LeetCode Topics
-## Linked List
-|  |
-| ------- |
-| [0019-remove-nth-node-from-end-of-list](https://github.com/nigamayushnigam3-star/DSA_Python/tree/master/0019-remove-nth-node-from-end-of-list) |
-| [0021-merge-two-sorted-lists](https://github.com/nigamayushnigam3-star/DSA_Python/tree/master/0021-merge-two-sorted-lists) |
-| [0083-remove-duplicates-from-sorted-list](https://github.com/nigamayushnigam3-star/DSA_Python/tree/master/0083-remove-duplicates-from-sorted-list) |
-| [0203-remove-linked-list-elements](https://github.com/nigamayushnigam3-star/DSA_Python/tree/master/0203-remove-linked-list-elements) |
-## Two Pointers
-|  |
-| ------- |
-| [0019-remove-nth-node-from-end-of-list](https://github.com/nigamayushnigam3-star/DSA_Python/tree/master/0019-remove-nth-node-from-end-of-list) |
-## Recursion
-|  |
-| ------- |
-| [0021-merge-two-sorted-lists](https://github.com/nigamayushnigam3-star/DSA_Python/tree/master/0021-merge-two-sorted-lists) |
-| [0203-remove-linked-list-elements](https://github.com/nigamayushnigam3-star/DSA_Python/tree/master/0203-remove-linked-list-elements) |
-## Array
-|  |
-| ------- |
-| [0053-maximum-subarray](https://github.com/nigamayushnigam3-star/DSA_Python/tree/master/0053-maximum-subarray) |
-| [0121-best-time-to-buy-and-sell-stock](https://github.com/nigamayushnigam3-star/DSA_Python/tree/master/0121-best-time-to-buy-and-sell-stock) |
-| [0704-binary-search](https://github.com/nigamayushnigam3-star/DSA_Python/tree/master/0704-binary-search) |
-## Divide and Conquer
-|  |
-| ------- |
-| [0053-maximum-subarray](https://github.com/nigamayushnigam3-star/DSA_Python/tree/master/0053-maximum-subarray) |
-## Dynamic Programming
-|  |
-| ------- |
-| [0053-maximum-subarray](https://github.com/nigamayushnigam3-star/DSA_Python/tree/master/0053-maximum-subarray) |
-| [0121-best-time-to-buy-and-sell-stock](https://github.com/nigamayushnigam3-star/DSA_Python/tree/master/0121-best-time-to-buy-and-sell-stock) |
-## Binary Search
-|  |
-| ------- |
-| [0704-binary-search](https://github.com/nigamayushnigam3-star/DSA_Python/tree/master/0704-binary-search) |
-<!---LeetCode Topics End-->
+---
+
+## 👨‍💻 Author
+
+**Ayush Nigam**
+
+GitHub: [@nigamayushnigam3-star](https://github.com/nigamayushnigam3-star)
+
+---
+
+⭐ If you find this repository useful, consider giving it a star!
